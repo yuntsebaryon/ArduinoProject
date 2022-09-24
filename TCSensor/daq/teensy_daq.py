@@ -7,11 +7,12 @@ import serial
 import pandas as pd
 import csv
 
-seonsor = serial.Serial( '/dev/cu.usbmodem116218601', 115200 )
+# seonsor = serial.Serial( '/dev/cu.usbmodem116218601', 115200 )
+seonsor = serial.Serial( '/dev/cu.HC-05-DevB', 115200 )
 # 'COM5' is the port name that the Arduino is connected.
 # '9600' is the Baudrate.
 
-fName = '/Users/yuntse/data/arduino/TCSensor/TCSensor_20220824.cvs'
+fName = '/Users/yuntse/data/arduino/TCSensor/TCSensor_20220923.cvs'
 # data = pd.DataFrame()
 if not exists( fName ):
     f = open( fName, mode = 'w', newline = '' )
