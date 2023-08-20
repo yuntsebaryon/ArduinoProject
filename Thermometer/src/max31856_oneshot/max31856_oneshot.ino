@@ -28,7 +28,7 @@ void setup() {
 
   maxthermo.begin();
 
-  maxthermo.setThermocoupleType(MAX31856_TCTYPE_K);
+  maxthermo.setThermocoupleType(MAX31856_TCTYPE_T);
 
   Serial.print("Thermocouple type: ");
   switch (maxthermo.getThermocoupleType() ) {
